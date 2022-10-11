@@ -33,9 +33,9 @@ The main data structures involved in the implementation of this EM algorithm are
 
 
 #### Resources:
-[1]	[Cheng’s note](http://sifaka.cs.uiuc.edu/czhai/pub/em-note.pdf) on the EM algorithm  
-[2]	[Chase Geigle’s note](http://times.cs.uiuc.edu/course/598f16/notes/em-algorithm.pdf) on the EM algorithm, which includes a derivation of the EM algorithm (see section 4), and  
-[3]	[Qiaozhu Mei’s note](http://times.cs.uiuc.edu/course/598f16/plsa-note.pdf) on the EM algorithm for PLSA, which includes a different derivation of the EM algorithm.
+[1]	[Cheng’s note](http://timan.cs.illinois.edu/czhai/pub/em-note.pdf) on the EM algorithm  
+[2]	[Chase Geigle’s note](http://timan.cs.illinois.edu/course/598f16/notes/em-algorithm.pdf) on the EM algorithm, which includes a derivation of the EM algorithm (see section 4), and  
+[3]	[Qiaozhu Mei’s note](http://timan.cs.illinois.edu/course/598f16/plsa-note.pdf) on the EM algorithm for PLSA, which includes a different derivation of the EM algorithm.
 
 
 THIS MP IS CODING AND DEBUGGING HEAVY! PLEASE DON'T LEAVE IT TILL THE LAST MINUTE!
