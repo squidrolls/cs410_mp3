@@ -15,6 +15,7 @@ def normalize(input_matrix):
     new_matrix = input_matrix / row_sums[:, np.newaxis]
     return new_matrix
 
+
 class Corpus(object):
     """
     A collection of documents.
@@ -146,7 +147,7 @@ class Corpus(object):
         # your code here
         document_topic_prob_numerator = np.empty_like(self.document_topic_prob)
         for d in range(self.number_of_documents):
-            document_topic_prob_numerator[d] = self.term_doc_matrix[d] @ self.topic_prob[d].T
+            document_topic_prob_numerator[d] = np.matmul(self.term_doc_matrix[d],(self.topic_prob[d]).T)
         document_topic_prob_denumerator = document_topic_prob_numerator.sum(axis=1).reshape(-1,1)
         self.document_topic_prob = document_topic_prob_numerator/document_topic_prob_denumerator
         # ############################
@@ -174,7 +175,7 @@ class Corpus(object):
         """
         # ############################
         # your code here
-        likelihood = (self.term_doc_matrix*np.log(self.document_topic_prob @ self.topic_word_prob)).sum(axis=1).sum(axis=0)
+        likelihood = (self.term_doc_matrix*np.log(np.matmul(self.document_topic_prob, self.topic_word_prob))).sum(axis=1).sum(axis=0)
         self.likelihoods.append(likelihood)
         print("likelihood" + str(likelihood))
         # ############################
