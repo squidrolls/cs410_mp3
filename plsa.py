@@ -15,7 +15,6 @@ def normalize(input_matrix):
     new_matrix = input_matrix / row_sums[:, np.newaxis]
     return new_matrix
 
-
 class Corpus(object):
     """
     A collection of documents.
